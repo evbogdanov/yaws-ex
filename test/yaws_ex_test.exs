@@ -14,6 +14,14 @@ defmodule YawsExTest do
     = :httpc.request('http://127.0.0.1:4000/echo/echo')
   end
 
+  test "/echo with unicode" do
+    assert {:ok, {{_, 200, _}, _, body}}
+    = :httpc.request('http://127.0.0.1:4000/echo/%D1%8D%D1%85%D0%BE')
+ 
+    assert "/echo/эхо"
+    == :erlang.list_to_binary(body)
+  end
+
   test "/index.yaws" do
     assert {:ok, {{_, 200, _}, _, body}}
     = :httpc.request('http://127.0.0.1:4000/index.yaws')
