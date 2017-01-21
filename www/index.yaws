@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Yaws</title>
+</head>
+<body>
+<erl>
+    out(_) ->
+        {html, <<"<h1>I ♥ Yaws</h1>"/utf8>>}.
+</erl>
+</body>
+</html>

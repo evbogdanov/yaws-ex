@@ -1,0 +1,11 @@
+*.DS_Store
+*.ez
+/.fetch
+/_build
+/cover
+/deps
+/doc
+/priv/*.access
+/priv/*.auth
+/priv/*.log
+erl_crash.dump

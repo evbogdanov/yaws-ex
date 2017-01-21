@@ -1,0 +1,1 @@
+%{"yaws": {:git, "https://github.com/klacke/yaws.git", "b32f7d49eff120f7860453a488acbd358beb5763", []}}
